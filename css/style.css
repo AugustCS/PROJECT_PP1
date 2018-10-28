@@ -1,3 +1,4 @@
+/*************************** ESTILOS GENERALES *******************/
 *{
 	box-sizing: border-box;
 }
@@ -13,7 +14,6 @@ a,span,img{
 a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit']{
 	font-family: "century";
 }
-/*************************** ESTILOS PANEL CENTRAL *******************/
 .btn{
 	border:none;
 	padding: 8px 18px;
@@ -32,6 +32,7 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	background:#CD403C;
 	color:white;
 }
+/*************************** ESTILOS PANEL CENTRAL *******************/
 .clear{
 	clear: both;
 }
@@ -136,7 +137,7 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 .box-login{
 	position:absolute;
 	width:400px;
-	height: 300px;
+	height: auto;
 	left:50%;
 	top:50%;
 	transform:translate(-50%,-50%);
@@ -144,11 +145,17 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	border-radius: 10px;
 	background: white;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .box-login h1{
 	font-size: 25px;
 	margin-bottom: 10px;
+}
+
+.icon-login{
+	text-align: center;
+	font-size: 80px;
 }
 .box-form fieldset{
 	width: 100%;

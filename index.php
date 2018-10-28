@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>LOGIN</title>
+	<title>FAMITEC S.A.C.</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	 
@@ -13,17 +13,23 @@
 <body>
 	<div class="body-login">
 		<div class="box-login">
+
 			<h1>Login</h1>
-			<form class="box-form">
+
+			<h2 class="icon-login"><i class="far fa-user"></i></h2>
+
+			<form class="box-form" action="probando.php" method="POST">
 				<fieldset>
-					<input type="text" placeholder="Usuario" name="username"></input>
+					<input type="text" placeholder="Usuario" name="username" required></input>
 				</fieldset>
 				<fieldset>
-					<input type="password" placeholder="Contraseña" name="password"></input>
+					<input type="password" placeholder="Contraseña" name="password" required></input>
 				</fieldset>
 				<fieldset>
-				 	<input type="submit" value="INGRESAR" class="btn btn-primary">
+				 	<input style="width:80%;" type="submit" value="INGRESAR" class="btn btn-primary">
 				 </fieldset>
+			</form>
+
 		</div>
 	</div>
 	
