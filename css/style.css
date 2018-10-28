@@ -13,6 +13,7 @@ a,span,img{
 a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit']{
 	font-family: "century";
 }
+/*************************** ESTILOS PANEL CENTRAL *******************/
 .btn{
 	border:none;
 	padding: 8px 18px;
@@ -70,9 +71,36 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	height:100vh;
 	background:#CFCFCF;
 	float:right;
-	display: flex;	
-	justify-content: center;
-	align-items: center;
+}
+.box-data-user{
+    width:100%;
+	height: 13vh;
+	background: white;
+	border-bottom: 2px solid #74B845;
+}
+.box-user{
+	float:right;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding: 12px;
+	border-radius: 20px;
+	border:1px solid black;
+	background:#4C4C4A;
+	color:white;	
+}
+.box-hide-user{
+	width:100%;
+	height: auto;
+	padding: 10px;
+	text-align: center;
+	display: none;
+}
+#linkusuario{
+	cursor:pointer;
+}
+.box-contenido{
+	width:100%;
+	height: 87vh;
 }
 .menu-lat{
 	background: #3B4673;
@@ -92,21 +120,17 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 .menu-lat a{
 	width:100%;
 	font-size: 18px;
-	color:black;
+	color:white;
 	padding:15px 0;
 	padding-left: 15px;
 }
-.bar-content h1{
-	font-size: 35px;
-	display: inline-block;
-	vertical-align: top;
-	color:white;
-}
-/* ESTILOS LOGIN*/
+
+
+/*************************** ESTILOS LOGIN *******************/
 .body-login{
 	width:100%;
 	height:100vh;
-	background:#323A4F;
+	background-image: url("../img/login.png");
 	position:relative;
 }
 .box-login{
