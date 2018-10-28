@@ -1,13 +1,17 @@
 *{
 	box-sizing: border-box;
 }
+@font-face{
+	font-family:"century";
+	src:url("../fonts/century.ttf");
+}
 a,span,img{
 	display: inline-block;
 	vertical-align: top;
 	text-decoration:none;
 }
 a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit']{
-	font-family: 'Niramit', sans-serif;
+	font-family: "century";
 }
 .btn{
 	border:none;
@@ -53,7 +57,7 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	height:100vh;
 	float:left;
 	overflow: auto;
-	background: #ED303B;
+	background: #8CA9D5;
 }
 
 .bar-lat h2{
@@ -64,22 +68,22 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 .bar-content{
 	width:85%;
 	height:100vh;
-	background:#2A2C2F;
+	background:#CFCFCF;
 	float:right;
-	display: flex;
+	display: flex;	
 	justify-content: center;
 	align-items: center;
 }
 .menu-lat{
-	background: #F5B003;
+	background: #3B4673;
 	display: none;
 }
 .bar-lat h3{
-	font-size: 17px;
+	font-size: 15px;
 	padding: 15px;
 	margin-bottom: 5px;
-	border-right: 3px solid #F5B003;
-	border-left: 3px solid #F5B003;
+	border-right: 3px solid #74B845;
+	border-left: 3px solid #74B845;
 	cursor: pointer;
 }
 .bar-lat h2,h3{

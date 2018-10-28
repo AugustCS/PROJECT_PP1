@@ -1,6 +1,6 @@
 <?php
 	$host = 'localhost';
-	$dbname= 'BD_AGRAVIS';
+	$dbname= 'BD_FAMITEC';
 	$user= 'root';
 	$pass= '';
 	$conexion=null;
