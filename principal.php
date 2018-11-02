@@ -22,10 +22,11 @@
 
 		<h3 class="t-1"><i class="fas fa-file-signature"></i> REGISTROS </h3>
 		<div class="menu-lat lat-1">
-			<a href="">Sub Opcion 1</a>
-			<a href="">Sub Opcion 1</a>
-			<a href="">Sub Opcion 1</a>
-			<a href="">Sub Opcion 1</a>
+			<a id="reg-usuario">Registro Usuarios</a>
+			<a id="reg-personal">Registro Personal</a>
+			<a id="reg-maquinaria">Registro Maquinaria</a>
+			<a id="reg-material">Registro Material</a>
+			<a id="control-maq">Control Maquinaria</a>
 		</div>
 
 		<h3 class="t-2"><i class="fas fa-chart-pie"></i> CONSULTAS </h3>

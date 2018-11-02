@@ -120,10 +120,18 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 }
 .menu-lat a{
 	width:100%;
-	font-size: 18px;
+	font-size: 16px;
 	color:white;
 	padding:15px 0;
 	padding-left: 15px;
+}
+.menu-lat a:hover{
+	color:black;
+	background:white;
+}
+.active{
+	color:black !important;
+	background:white;
 }
 
 
