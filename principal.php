@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if(!isset($_SESSION["usuario"])){
+	header("location:index.php");
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,7 +58,7 @@
 			<div class="box-user">
 				<span id="linkusuario">Bienvenido ADMIN  <i class="far fa-user-circle"></i> <i class="fas fa-angle-down"></i></span>
 				<div class="box-hide-user">
-					<span href="">Cerrar Sesion <i class="fas fa-times-circle"></i></span>
+					<a href="cerrar_sesion.php" style="color:white;">Cerrar Sesion <i class="fas fa-times-circle"></i></a>
 			</div>
 		</div>
 				<div class="clear"></div>
