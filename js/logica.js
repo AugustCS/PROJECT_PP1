@@ -34,6 +34,6 @@ $(document).ready(function(){
 	lanzarContenido("#reg-usuario",".box-contenido","reg_usuario.php");
 	lanzarContenido("#reg-personal",".box-contenido","reg_personal.php");
 	lanzarContenido("#reg-maquinaria",".box-contenido","reg_maquinaria.php");
-
-
+    lanzarContenido("#reg-material",".box-contenido","reg_material.php");
+    lanzarContenido("#control-maq",".box-contenido","cont_maquinaria.php");
 })

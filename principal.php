@@ -31,23 +31,16 @@
 
 		<h3 class="t-2"><i class="fas fa-chart-pie"></i> CONSULTAS </h3>
 		<div class="menu-lat lat-2">
-			<a href="">Sub Opcion 2</a>
-			<a href="">Sub Opcion 2</a>
+			<a href="">Maquinaria</a>
+			<a href="">Control de Mantenimiento</a>
 			<a href="">Sub Opcion 2</a>
 			<a href="">Sub Opcion 2</a>
 		</div>
 
 		<h3 class="t-3"><i class="fas fa-edit"></i> MODIFICACIONES </h3>		
 		<div class="menu-lat lat-3">
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
-		</div>
-		<h3 class="t-4"><i class="fas fa-book"></i> REPORTES </h3>
-		<div class="menu-lat lat-4">
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
+			<a href="">Maquinaria</a>
+			<a href="">Usuarios</a>
 			<a href="">Sub Opcion 3</a>
 			<a href="">Sub Opcion 3</a>
 		</div>
@@ -63,6 +56,7 @@
 				<div class="clear"></div>
 		</div>
 		<div class="box-contenido">
+			<!--CAJA DE CONTENIDO-->
 	    </div>
 	<div class="clear"></div>
 	<script src="js/jquery.js"></script>
