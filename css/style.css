@@ -152,7 +152,7 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	border:2px solid black;
 	border-top-left-radius:35px;
 	border-bottom-right-radius: 35px;
-	background: white;
+	background: rgba(0,0,0,0.2);
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -160,11 +160,13 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 .box-login h1{
 	font-size: 25px;
 	margin-bottom: 10px;
+	color: white;
 }
 
 .icon-login{
 	text-align: center;
 	font-size: 80px;
+	color: rgb(255,255,255);
 }
 .box-form fieldset{
 	width: 100%;

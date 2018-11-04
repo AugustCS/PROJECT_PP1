@@ -56,7 +56,7 @@ if(!isset($_SESSION["usuario"])){
 	<div class="bar-content">
 		<div class="box-data-user">
 			<div class="box-user">
-				<span id="linkusuario">Bienvenido ADMIN  <i class="far fa-user-circle"></i> <i class="fas fa-angle-down"></i></span>
+				<span id="linkusuario">Bienvenido <?php print $_SESSION["usuario"]; ?>  <i class="far fa-user-circle"></i> <i class="fas fa-angle-down"></i></span>
 				<div class="box-hide-user">
 					<a href="cerrar_sesion.php" style="color:white;">Cerrar Sesion <i class="fas fa-times-circle"></i></a>
 			</div>
