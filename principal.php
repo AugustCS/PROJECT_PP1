@@ -38,18 +38,18 @@ if(!isset($_SESSION["usuario"])){
 
 		<h3 class="t-2"><i class="fas fa-chart-pie"></i> CONSULTAS </h3>
 		<div class="menu-lat lat-2">
-			<a href="">Maquinaria</a>
+			<a href="">Personal</a>
+			<a href="">Maquinarias</a>
+			<a href="">Materiales</a>
 			<a href="">Control de Mantenimiento</a>
-			<a href="">Sub Opcion 2</a>
-			<a href="">Sub Opcion 2</a>
 		</div>
 
 		<h3 class="t-3"><i class="fas fa-edit"></i> MODIFICACIONES </h3>		
 		<div class="menu-lat lat-3">
+			<a href="">Personal</a>
 			<a href="">Maquinaria</a>
-			<a href="">Usuarios</a>
-			<a href="">Sub Opcion 3</a>
-			<a href="">Sub Opcion 3</a>
+			<a href="">Materiales</a>
+			<a href="">Control de Mantenimiento</a>
 		</div>
 	</div>
 	<div class="bar-content">
