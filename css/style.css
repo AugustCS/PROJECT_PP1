@@ -11,7 +11,7 @@ a,span,img{
 	vertical-align: top;
 	text-decoration:none;
 }
-a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[type='submit']{
+a,span,h1,h2,h3,h4,h5,h6,p,li,input,label{
 	font-family: "century";
 }
 .btn{
@@ -32,6 +32,27 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input[type='text'],input[type='password'],input[ty
 	background:#CD403C;
 	color:white;
 }
+.box-cargado{
+	width:100%;
+	height: 100%;
+	padding:20px;
+}
+.box-cargado-left{
+	width:30%;
+	height: 100%;
+	float:left;
+}
+.box-cargado-right{
+	width:70%;
+	height: 100%;
+	float:right;
+}
+.textos-form{
+	padding: 3px;
+	font-size: 16px;
+	width:90%;
+}
+
 /*************************** ESTILOS PANEL CENTRAL *******************/
 .clear{
 	clear: both;

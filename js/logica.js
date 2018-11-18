@@ -26,12 +26,11 @@ $(document).ready(function(){
 	function lanzarContenido(link,contenido,archivo){
 		$(link).click(function(){
 			$(".menu-lat a").removeClass("active");
-			$(contenido).load(archivo);
 			$(link).addClass("active");
+			$(contenido).load("app/"+archivo);
 		})
 	}
 
-	lanzarContenido("#reg-usuario",".box-contenido","reg_usuario.php");
 	lanzarContenido("#reg-personal",".box-contenido","reg_personal.php");
 	lanzarContenido("#reg-maquinaria",".box-contenido","reg_maquinaria.php");
     lanzarContenido("#reg-material",".box-contenido","reg_material.php");

@@ -30,10 +30,9 @@ if(!isset($_SESSION["usuario"])){
 
 		<h3 class="t-1"><i class="fas fa-file-signature"></i> REGISTROS </h3>
 		<div class="menu-lat lat-1">
-			<a id="reg-usuario">Registro Usuarios</a>
-			<a id="reg-personal">Registro Personal</a>
-			<a id="reg-maquinaria">Registro Maquinaria</a>
-			<a id="reg-material">Registro Material</a>
+			<a id="reg-personal">Registrar Personal</a>
+			<a id="reg-maquinaria">Registrar Maquinaria</a>
+			<a id="reg-material">Registrar Material</a>
 			<a id="control-maq">Control Maquinaria</a>
 		</div>
 
