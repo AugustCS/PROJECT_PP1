@@ -17,12 +17,38 @@ if(!isset($_SESSION["usuario"])){
  	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="img/icon.png">
+	<script>
+		/*VALIDACION LETRAS Y/O NUMEROS*/
+	    function soloNumeros(e){
+		       key = e.keyCode || e.which;
+		       tecla = String.fromCharCode(key).toLowerCase();
+		       numeros = "0123456789.";
+		       especiales = "8-37-39-46";
+
+		       tecla_especial = false
+		       for(var i in especiales){
+		            if(key == especiales[i]){
+		                tecla_especial = true;
+		                break;
+		            }
+		        }
+		        if(numeros.indexOf(tecla)==-1 && !tecla_especial){
+		            return false;
+		        }
+		    }
+	    /*FIN VALIDACION LETRAS Y/O NUMEROS*/
+	</script>
 </head>
 <body>
-	<!-- <div class="bar-sup">
-		<img src="img/logoa.png">
-		<h1>FAMITEC S.A.C.</h1>
-	</div>  -->
+	<div class="box-cargando">
+		<span><i class="fas fa-spinner fa-spin"></i></span>
+	</div>
+	<div class="box-aceptado">
+		<p>REGISTRADO INGRESADO CORRECTAMENTE</p>
+	</div>
+	<div class="box-rechazado">
+		<p>ERROR EN EL REGISTRO SOLICITADO</p>
+	</div>
 	<div class="bar-lat">
 
 		<img src="img/LogoFamitec.jpg" title="FAMITEC S.A.C.">
@@ -63,7 +89,7 @@ if(!isset($_SESSION["usuario"])){
 				<div class="clear"></div>
 		</div>
 		<div class="box-contenido">
-			<!--CAJA DE CONTENIDO-->
+			
 	    </div>
 	<div class="clear"></div>
 	<script src="js/jquery.js"></script>

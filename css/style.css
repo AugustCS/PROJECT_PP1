@@ -11,7 +11,7 @@ a,span,img{
 	vertical-align: top;
 	text-decoration:none;
 }
-a,span,h1,h2,h3,h4,h5,h6,p,li,input,label{
+a,span,h1,h2,h3,h4,h5,h6,p,li,input,label,option,select,textarea{
 	font-family: "century";
 }
 .btn{
@@ -41,6 +41,12 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input,label{
 	width:30%;
 	height: 100%;
 	float:left;
+	overflow: auto;
+}
+.box-cargado-left h1{
+	font-size: 20px;
+	margin-bottom: 10px;
+	color:#3D83C0;
 }
 .box-cargado-right{
 	width:70%;
@@ -48,11 +54,69 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input,label{
 	float:right;
 }
 .textos-form{
-	padding: 3px;
-	font-size: 16px;
+	padding: 5px;
 	width:90%;
+	border:none;
+	border:1px solid #08478F;
+	border-radius: 5px;
+	margin-top: 4px;
 }
-
+.ancho-ajustado{
+	max-width: 288px;
+	min-width: 90%;
+	max-height: 170px;
+	min-height: 150px;
+}
+.box-cargado-right{
+	background:gray;
+}
+.box-aceptado{
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	border-radius: 5px;
+	border:none;
+	background:#54AE54;
+	position:fixed;
+	top:5px;
+	left:30%;
+	display: none;
+}
+.box-aceptado p{
+	color:white;
+	font-size: 17px;
+	text-align: center;
+}
+.box-rechazado{
+	width: 400px;
+	height: auto;
+	padding: 15px;
+	border-radius: 5px;
+	border:none;
+	background:#CD403C;
+	position:fixed;
+	top:5px;
+	left:30%;
+	display: none;
+}
+.box-rechazado p{
+	color:white;
+	font-size: 17px;
+	text-align: center;
+}
+.box-cargando{
+	width:200px;
+	height: auto;
+	padding-top: 10px;
+	position:fixed;
+	top:5px;
+	left:50%;
+	display: none;
+}
+.box-cargando span{
+	font-size: 30px;
+	color:#08478F;
+}
 /*************************** ESTILOS PANEL CENTRAL *******************/
 .clear{
 	clear: both;
@@ -193,7 +257,7 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input,label{
 	width: 100%;
 	padding: 5px;
 }
-.box-form fieldset input[type='text'],input[type='password']{
+.box-form fieldset input[type='text'],.box-form fieldset input[type='password']{
 	width: 80%;
 	padding: 9px;
 	font-size: 15px;
@@ -201,7 +265,7 @@ a,span,h1,h2,h3,h4,h5,h6,p,li,input,label{
 	border: none;
 	border:2px solid gray;
 }
-.box-form fieldset input[type='text']:hover,input[type='password']:hover{
+.box-form fieldset input[type='text']:hover,.box-form fieldset input[type='password']:hover{
 	border:2px solid #3D83C0;
 	background:  #15A9EE;
 	color:white;

@@ -35,4 +35,37 @@ $(document).ready(function(){
 	lanzarContenido("#reg-maquinaria",".box-contenido","reg_maquinaria.php");
     lanzarContenido("#reg-material",".box-contenido","reg_material.php");
     lanzarContenido("#control-maq",".box-contenido","cont_maquinaria.php");
+
+    
+
+    /*LOGICA INSERCIONES*/
+    $("#form-reg-personal").submit(function(e) {
+        e.preventDefault();
+        var data=$(this).serializeArray();
+        data.push({name:'tag',value:'registrar_personal'});
+	       
+	       $.ajax({
+	         url: 'app/registros_bd.php',
+	         type: 'POST',
+	         dataType: 'json',
+	         data: data,
+	         // beforeSend:function(){
+	            
+	         // }
+	       })
+	       .done(function() {
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function() {
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })       
+  		})
+
+
 })
