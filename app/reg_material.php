@@ -20,8 +20,8 @@
 	        }
 	    }
     </script>
-    <script src="jquery.js"></script>
-    <script src="logica.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/logica.js"></script>
 </head>
 <body>
 	<div class="box-cargado">

@@ -49,9 +49,9 @@ $(document).ready(function(){
 	         type: 'POST',
 	         dataType: 'json',
 	         data: data,
-	         // beforeSend:function(){
-	            
-	         // }
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+	         }
 	       })
 	       .done(function() {
 	        	$(".box-aceptado").fadeIn("fast");
@@ -64,7 +64,12 @@ $(document).ready(function(){
 	        	setTimeout(function(){
 	        		$(".box-rechazado").fadeOut("fast");
 	        	},2000)
-	       })       
+	       })    
+	       .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+	       })  
   		})
 
 

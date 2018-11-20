@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="jquery.js"></script>
-<script src="logica.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/logica.js"></script>
 </head>
 <body>
 	<div class="box-cargado">
 		<div class="box-cargado-left">
 				<h1>REGISTRAR MAQUINARIA</h1>
 			<form action="">
+				<fieldset>
+					<label>Estado de la Maquina</label><br>
+					<select class="textos-form" name=estado_maq" id="estaditos">
+						<script>
+							$("#estaditos").load("app/consulta_estado_maq.php");
+						</script>
+					</select>
+				</fieldset><br>
 				<fieldset>
 					<label>Nombre</label><br>
 					<input class="textos-form" type="text" placeholder="Nombre de la Maquina" name="nom_maquinaria">

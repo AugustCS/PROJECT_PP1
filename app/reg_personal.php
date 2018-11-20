@@ -20,21 +20,21 @@
 	        }
 	    }
     </script>
-    <script src="jquery.js"></script>
-    <script src="logica.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/logica.js"></script>
 </head>
 <body>
 	<div class="box-cargado">
 		<div class="box-cargado-left">
 				<h1>REGISTRAR PERSONAL</h1>
-			<form id="form-reg-personal">
-				<fieldset>
+			<form id="form-reg-personal" method="POST">
+				<fieldset>	
 					<label>Nombres y Apellidos</i></label><br>
 					<input class="textos-form" type="text" placeholder="Escribe aqui" name="nom_personal">
 				</fieldset><br>
 				<fieldset>
 					<label>DNI</label><br>
-					<input onkeypress="return soloNumeros(event)" class="textos-form" type="text" placeholder="Escribe aqui" maxlength="8"name="dni_personal">
+					<input onkeypress="return soloNumeros(event)" class="textos-form" type="text" placeholder="Escribe aqui" maxlength="8" name="dni_personal">
 				</fieldset>
 				<fieldset><br>
 					<label>Correo</label><br>
@@ -50,17 +50,17 @@
 				</fieldset><br>
 					<fieldset>
 					<label>Estado</label><br>
-					<select name="" class="textos-form" name="estado_personal">
+					<select class="textos-form" name="estado_personal">
 						<option value="1">Habilitado</option>
 						<option value="0">No Habilitado</option>
 					</select>
 				</fieldset><br>
 				<fieldset>
 					<label>Nivel</label><br>
-					<select name="" class="textos-form" name="niv_personal">
-						<option value="Administrador">Administrador</option>
-						<option value="Jefe">Jefe</option>
-						<option value="Empleado">Empleado</option> 
+					<select class="textos-form" name="niv_personal">
+						<option value="1">Administrador</option>
+						<option value="2">Jefe</option>
+						<option value="3">Empleado</option> 
 					</select>
 				</fieldset><br>
 				<fieldset>

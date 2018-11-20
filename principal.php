@@ -17,27 +17,6 @@ if(!isset($_SESSION["usuario"])){
  	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="img/icon.png">
-	<script>
-		/*VALIDACION LETRAS Y/O NUMEROS*/
-	    function soloNumeros(e){
-		       key = e.keyCode || e.which;
-		       tecla = String.fromCharCode(key).toLowerCase();
-		       numeros = "0123456789.";
-		       especiales = "8-37-39-46";
-
-		       tecla_especial = false
-		       for(var i in especiales){
-		            if(key == especiales[i]){
-		                tecla_especial = true;
-		                break;
-		            }
-		        }
-		        if(numeros.indexOf(tecla)==-1 && !tecla_especial){
-		            return false;
-		        }
-		    }
-	    /*FIN VALIDACION LETRAS Y/O NUMEROS*/
-	</script>
 </head>
 <body>
 	<div class="box-cargando">
@@ -89,7 +68,7 @@ if(!isset($_SESSION["usuario"])){
 				<div class="clear"></div>
 		</div>
 		<div class="box-contenido">
-			
+			<!-- CAJITA VACIA -->
 	    </div>
 	<div class="clear"></div>
 	<script src="js/jquery.js"></script>

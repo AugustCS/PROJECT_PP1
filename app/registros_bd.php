@@ -1,5 +1,6 @@
 <?php 
 	require '../conexion.php';
+	
 	$tag=$_POST["tag"];
 
 	if(isset($tag) && $tag!==""){
@@ -22,6 +23,9 @@
             $inser_personal->bindParam(':PASS',$pass_personal);
             $inser_personal->bindParam(':ESTADO',$estado_personal);
             $inser_personal->bindParam(':NIVEL',$niv_personal);
+
+            $inser_personal->execute();
+
 			print true;
 		}else{
 			print false;
@@ -39,6 +43,8 @@
              $inser_material->bindParam(':COSTO_MATERIAL',$costo_material);
               $inser_material->bindParam(':UNI_MATERIAL',$medida_material);
                $inser_material->bindParam(':NOM_MATERIAL',$nom_material);
+            $inser_material->execute();
+
 			print true;
 		}else{
 			print false;
@@ -59,6 +65,8 @@
             $inser_maquinaria->bindParam(':PIEZAS_MAQUINARIAS',$piezas_maquinaria);
             $inser_maquinaria->bindParam(':COSTO_HORA_SOLES',$costosoles_maquinaria);
             $inser_maquinaria->bindParam(':COSTO_HORA_DOLARES',$costodolares_maquinaria);
+
+            $inser_maquinaria->execute();
 			print true;
 		}else{
 			print false;
