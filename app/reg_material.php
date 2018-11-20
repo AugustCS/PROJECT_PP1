@@ -27,7 +27,7 @@
 	<div class="box-cargado">
 		<div class="box-cargado-left">
 			<h1>REGISTRAR MATERIAL</h1>
-		<form action="">
+		<form id="form-reg-material">
 			    <fieldset>
 					<label>Nombre</label><br>
 					<input class="textos-form" type="text" placeholder="Nombre del Material" name="nom_material">

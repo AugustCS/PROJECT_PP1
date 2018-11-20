@@ -73,4 +73,36 @@ $(document).ready(function(){
   		})
 
 
+    $("#form-reg-material").submit(function(e) {
+        e.preventDefault();
+        var data=$(this).serializeArray();
+        data.push({name:'tag',value:'registrar_material'});
+	       
+	       $.ajax({
+	         url: 'app/registros_bd.php',
+	         type: 'POST',
+	         dataType: 'json',
+	         data: data,
+	         beforeSend:function(){
+	           $(".box-cargando").css("display","block");
+	         }
+	       })
+	       .done(function() {
+	        	$(".box-aceptado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-aceptado").fadeOut("fast");
+	        	},2000)
+	       })
+	       .fail(function() {
+	         	$(".box-rechazado").fadeIn("fast");
+	        	setTimeout(function(){
+	        		$(".box-rechazado").fadeOut("fast");
+	        	},2000)
+	       })    
+	       .always(function(){
+	       		setTimeout(function(){
+	         	  $(".box-cargando").fadeOut("fast");
+	       		},500)
+	       })  
+  		})
 })

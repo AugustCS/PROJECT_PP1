@@ -35,13 +35,13 @@
 			$nom_material = $_POST["nom_material"];
 			$des_material = $_POST["des_material"];
 			$costo_material = $_POST["costo_material"];
-			$medida_material = $_POST["medida_personal"];
+			$medida_material = $_POST["medida_material"];
 
             $inser_material = $conexion->prepare("INSERT INTO bd_famitec.TBL_MATERIALES(DES_MATERIAL,COSTO_MATERIAL,UNI_MEDIDA,NOM_MATERIAL)
                 VALUES(:DES_MATERIAL,:COSTO_MATERIAL,:UNI_MEDIDA,:NOM_MATERIAL);");
              $inser_material->bindParam(':DES_MATERIAL',$des_material);
              $inser_material->bindParam(':COSTO_MATERIAL',$costo_material);
-              $inser_material->bindParam(':UNI_MATERIAL',$medida_material);
+              $inser_material->bindParam(':UNI_MEDIDA',$medida_material);
                $inser_material->bindParam(':NOM_MATERIAL',$nom_material);
             $inser_material->execute();
 
