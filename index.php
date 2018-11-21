@@ -14,7 +14,7 @@
 	<div class="body-login">
 		<div class="box-login">
 
-			<h1>Login</h1>
+			<h1>PROBANDO</h1>
 
 			<h2 class="icon-login"><i class="far fa-user"></i></h2>
 
